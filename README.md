@@ -1,8 +1,8 @@
 # RAY的部署及测试
 参考:
 1. [RAY主页](https://docs.ray.io/en/latest/index.html)
-2. [本文的在线lab]
-3. Blog
+2. [本文的在线lab--Undo]
+3. [Blog](http://www.poetrilin.com/2023/06/03/Ray%E9%83%A8%E7%BD%B2%E4%B8%8E%E6%B5%8B%E8%AF%95/)
 
 
 ## 选定一个与选题对计算类任务
@@ -59,4 +59,5 @@ NUM_SAMPLING_TASKS：这个参数表示并行执行的采样任务数量。增�
 NUM_SAMPLES_PER_TASK：这个参数表示每个采样任务中的采样点数量。增加NUM_SAMPLES_PER_TASK会增加每个任务的计算量，可能会导致任务执行时间的增加。然而，更大的采样点数量也会提高估计π的准确性。在优化时，需要权衡准确性和性能之间的关系。
 
 ## 参数优化
+
 见[性能测试文档](./性能测试.md)
