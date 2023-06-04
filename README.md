@@ -15,9 +15,11 @@
 ## 完成单机版部署并进行性能测试 
 
 ### 环境配置
-创建一个新的虚拟环境(不在此赘述)安装ray的最小依赖`pip install ray`,如果成功你将看到如下类似结果：
+创建一个新的虚拟环境(不在此赘述) ,安装ray的最小依赖`pip install ray`,
+
+如果成功你将看到如下类似结果：
 ```shell
-Successfully installed aiosignal-1.3.1 attrs-23.1.0 certifi-2023.5.7 charset-normalizer-3.1.0 click-8.1.3 colorama-0.4.6 distlib-0.3.6 filelock-3.12.0 frozenlist-1.3.3 grpcio-1.51.3 idna-3.4 jsonschema-4.17.3 msgpack-1.0.5 numpy-1.24.3 platformdirs-3.5.1 protobuf-4.23.2 pyrsistent-0.19.3 pyyaml-6.0 ray-2.4.0 requests-2.31.0 urllib3-2.0.2 virtualenv-20.21.0
+Successfully installed ...
 ```
 
 此时运行
@@ -32,12 +34,7 @@ ray.init()
 
 #### 测试
 
-我们测试的是吞吐量和平均任务执行时间,注意:
-
-吞吐量和平均执行时间的确都与任务的执行时间有关，但它们着重点不同，吞吐量关注的是任务的并发处理能力和每秒处理的样本数，而平均执行时间关注的是单个任务的执行速度。
-
-虽然它们都与任务执行时间有关，但提供了不同的视角和衡量标准，可以在不同层面上评估系统的性能。
-
+我们测试的是吞吐量和平均任务执行时间,
 程序代码见[test代码](./ray_test.ipynb).
 
 
